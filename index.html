@@ -1,175 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Me</title>
 
-    <title>Ashanti Muro | Home</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
 
-    <!-- Connects this page to the CSS stylesheet -->
-    <link rel="stylesheet" href="style.css">
+    * {
+      box-sizing: border-box;
+    }
+
+    nav {
+      background-color: #333;
+      padding: 15px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-right: 20px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 20px;
+      max-width: 800px;
+      margin: 20px auto;
+    }
+
+    input[type=text],
+    input[type=email],
+    select,
+    textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+    }
+
+    button[type=submit] {
+      background-color: #04AA6D;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button[type=submit]:hover {
+      background-color: #45a049;
+    }
+
+    .map {
+      margin-top: 30px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: 0;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 30px;
+      padding: 15px;
+      background-color: #333;
+      color: white;
+    }
+  </style>
 </head>
 
 <body>
 
-    <!-- Banner -->
-    <header id="header">
-        <h1>Ashanti Muro</h1>
-        <p class="tagline">A Little Corner of My World ♡</p>
-    </header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="favorites.html">Favorites</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 
-    <!-- Navigation -->
-    <nav id="nav" aria-label="Main navigation">
-        <a href="index.html" aria-current="page">Home</a>
-        <a href="about.html">About</a>
-        <a href="favorites.html">Favorites</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+  <main>
+    <div class="container">
+      <h1>Contact Me</h1>
+      <p>Have a question? Send me a message!</p>
 
-    <!-- Main Content -->
-    <main id="content">
+      <form id="contactForm">
 
-        <!-- Introduction and Hero Image -->
-        <section id="intro">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname"
+               name="firstname"
+               placeholder="Your first name..."
+               required>
 
-            <div class="intro-text">
-  <section id="favorites-feature">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname"
+               name="lastname"
+               placeholder="Your last name..."
+               required>
 
-            <h2>Welcome to My Website!</h2>
-                <p>
-                    My name is Ashanti Muro, and I'm a student who has taken
-                    graphic design and is currently taking web design at my
-                    high school. I get most of my inspiration from movies,
-                    and I love focusing on making my designs more cute even
-                    if it's not what everyone wants. I hope this website can
-                    give you a better idea of who I am as a whole!!
-                </p>
-            </div>
+        <label for="email">Email Address</label>
+        <input type="email" id="email"
+               name="email"
+               placeholder="Your email..."
+               required>
 
-            <!-- Hero Image -->
-           <div class="hero-image">
-    <img
-        src="images/unisnoopy.jpeg"
-        alt="Snoopy riding a unicorn"
-    >
-    <p class="image-caption">
-        A little bit of cute inspiration!
-    </p>
-</div>>
-            </div>
+        <label for="subject">Subject</label>
+        <select id="subject" name="subject">
+          <option value="question">Question</option>
+          <option value="feedback">Feedback</option>
+          <option value="other">Other</option>
+        </select>
 
-        </section>
+        <label for="message">Message</label>
+        <textarea id="message"
+                  name="message"
+                  placeholder="Write your message..."
+                  style="height:200px"
+                  required></textarea>
 
-        <!-- Three Page Previews -->
-        <section id="page-previews">
+        <button type="submit">Submit</button>
 
-            <h2>Explore My Website ♡</h2>
+      </form>
 
-            <div class="preview-container">
+      <section class="map">
+        <h2>Find My City</h2>
+        <p>Here's a map of San Diego, California.</p>
 
-                <!-- About Page Preview -->
-                <article class="preview-card">
-                    <h3>About Me</h3>
+        <iframe
+          title="Map of San Diego"
+          src="https://www.google.com/maps?q=San+Diego+California&output=embed"
+          loading="lazy">
+        </iframe>
+      </section>
 
-                   
-<div class="preview-image">
-    <img
-        src="me.jpeg"
-        alt="About me"
-    >
-</div>
+    </div>
+  </main>
 
+  <footer>
+    <p>&copy; 2026 My Autobiographical Website</p>
+  </footer>
 
-                    <p>
-                        Click below to learn more about me!
-                    </p>
+  <script>
+    document.getElementById("contactForm")
+      .addEventListener("submit", function(event) {
 
-                    <a class="pink-button" href="about.html">
-                        Learn About Me
-                    </a>
-                </article>
+        event.preventDefault();
 
-                <!-- Favorites Page Preview -->
-                <article class="preview-card">
-                    <h3>My Favorites</h3>
+        alert("Thank you! This is a demonstration form. No message was sent.");
 
-                    
-<div class="preview-image">
-    <img
-        src="blonde.jpeg"
-        alt="Llegally Blonde"
-    >
-</div>
+        document.getElementById("contactForm").reset();
 
-
-                    <p>
-                        Click below to learn more about my hobbies and interests!
-                    </p>
-
-                    <a class="pink-button" href="favorites.html">
-                        Explore My Favorites
-                    </a>
-                </article>
-
-                <!-- Contact Page Preview -->
-                <article class="preview-card">
-                    <h3>Contact Me</h3>
-
-                    
-<div class="preview-image">
-    <img
-        src="call.jpeg"
-        alt="My Melody on phone"
-    >
-</div>
-
-
-                    <p>
-                        Click below if you have any questions!
-                    </p>
-
-                    <a class="pink-button" href="contact.html">
-                        Contact Me
-                    </a>
-                </article>
-
-            </div>
-        </section>
-
-        <!-- Larger Favorites Feature -->
-        <section id="favorites-feature">
-
-            <h2>A Few of My Favorite Things ♡</h2>
-
-            <p>
-                My favorite movie of all time is The Tale of the Princess
-                Kaguya, but I'm always open to any type of movie
-                recommendations. I love listening to music while I design,
-                especially my favorite artist, Laufey. I will never complain
-                if you give me a bowl of poke or cupcakes as a little snack
-                while I'm designing.
-            </p>
-
-            <a class="pink-button" href="favorites.html">
-                See All My Favorites
-            </a>
-
-        </section>
-
-    </main>
-
-    <!-- Footer -->
-    <footer id="footer">
-        <p>
-            &copy; 2026 Ashanti Muro. All rights reserved.
-        </p>
-    </footer>
+      });
+  </script>
 
 </body>
 </html>
-        <p>&copy; 2026 Ashanti Muro. All rights reserved.</p>
-    </footer>
 
-</body>
-</html>
+        
