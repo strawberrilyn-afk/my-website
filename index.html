@@ -1,1 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ashanti Muro | Favorites</title>
+
+    <!-- Uses the same stylesheet as the Home page -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Banner -->
+    <header id="header">
+        <h1>Ashanti Muro</h1>
+        <p class="tagline">A Little Corner of My World ♡</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav id="nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="favorites.html" aria-current="page">Favorites</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="content">
+
+        <!-- Favorites Introduction -->
+        <section id="favorites-intro">
+            <h2>My Hobbies and Interests ♡</h2>
+
+            <p>
+                My favorite hobbies include running, watching movies, and
+                designing. I've had these hobbies since I was young, or was
+                at least exposed to them, and I've loved seeing how my
+                interests and perspectives on them have changed over time.
+                Each hobby has become an important part of who I am!
+            </p>
+        </section>
+
+        <!-- Three Favorite Categories -->
+        <section id="hobby-categories">
+            <h2>A Few Things About My Hobbies</h2>
+
+      <div class="hobby-container">
+
+                <!-- Running Category -->
+        <article class="hobby-card">
+                    <h3>Running ♡</h3>
+
+                    <ul>
+                        <li>
+                            I run cross country and do long-distance track.
+                        </li>
+                        <li>
+                            I started running in elementary school.
+                        </li>
+                        <li>
+                            My teammates have grown my love for the sport even more.
+                        </li>
+                    </ul>
+
+                    <p>
+                        Running has taught me about dedication, teamwork,
+                        and pushing myself to keep improving.
+                    </p>
+          </article>
+
+          <!-- Movies Category -->
+          <article class="hobby-card">
+              <h3>Movies ♡</h3>
+
+              <ul>
+                  <li>I love romance movies.</li>
+                  <li>My favorite actress is Emma Stone.</li>
+                  <li>
+                      After every movie, I love logging it on Letterboxd.
+                  </li>
+              </ul>
+
+              <p>
+                  Movies inspire my creativity, and I love discovering
+                  stories that stay with me after the credits roll.
+              </p>
+
+              <p> <a href="https://letterboxd.com/" target="_blank" rel="noopener noreferrer"> Visit Letterboxd to explore and log movies</a></p>
+                    <p><a href="https://letterboxd.com/" target="_blank" rel="noopener noreferrer">
+                      <!-- Roblox External Link -->
+                      I also enjoy playing Roblox in my free time! </a><a href="https://www.roblox.com/" target="_blank" rel="noopener noreferrer"> Visit the official Roblox website </a>. </p>
+</a>
+          </article>
+
+          <!-- Design Category -->
+          <article class="hobby-card">
+                    <h3>Design ♡</h3>
+
+                    <ul>
+                        <li>
+                            My dad was a graphic designer, so I was exposed
+                            to design a lot when I was younger.
+                        </li>
+                        <li>
+                            I didn't really know much about it until I took
+                            graphic design.
+                        </li>
+                        <li>
+                            I love using Illustrator more than Photoshop.
+                        </li>
+                    </ul>
+
+                    <p>
+                        I enjoy experimenting with colors, layouts, and
+                        cute details to make each design feel like me.
+                    </p>
+        </article>
+
+      </div>
+        </section>
+
+        <!-- External Link -->
+        <section id="running-link">
+            <p>
+                Want to learn more about running?
+                <a href="https://worldathletics.org/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Explore the official World Athletics website
+                </a>.
+            </p>
+        </section>
+
+        <!-- Eight-Image Gallery -->
+        <section id="favorites-gallery">
+            <h2>My Favorite Things Gallery ♡</h2>
+
+            <p class="gallery-intro">
+                Here are some images inspired by the things I love!
+                Click any image to see a larger version.
+            </p>
+
+            <div class="gallery-grid">
+
+                <!-- Image 1: Running -->
+                <figure class="gallery-item">
+                    <button class="gallery-image-button"
+                            type="button"
+                            data-full="images/running1-large.jpg"
+                            data-alt="A image of a Snoopy on track representing my love for running">
+                        <img src="snoopy.jpeg"
+                             alt="Track image with Snoopy"
+                             loading="lazy">
+                    </button>
+                    <figcaption>
+                        <strong>Running</strong>
+                        I love being part of a team and improving as a runner.
+                    </figcaption>
+                </figure>
+
+                <!-- Image 2: Track -->
+                <figure class="gallery-item">
+                    <button class="gallery-image-button"
+                            type="button"
+                            data-full="image"
+                            data-alt="Lalaland movie scene">
+                        <img src="lalaland.jpeg"
+                             alt="A scene of one of my favorite movies, Lalaland."
+                             loading="lazy">
+                    </button>
+                    <figcaption>
+                        <strong>Lalaland</strong>
+                        Lalaland is one of my favorite movies
+                    </figcaption>
+                </figure>
+
+                <!-- Image 3: Movies -->
+                <figure class="gallery-item">
+                    <button class="gallery-image-button"
+                            type="button"
+                            data-full="images/movie1-large.jpg"
+                            data-alt="Uptown girls movie">
+                        <img src="uptowngirls.jpeg"
+                             alt="Uptown image representing my love of films"
+                             loading="lazy">
+                    </button>
+                    <figcaption>
+                        <strong>Movies</strong>
+                        I love getting inspired by the outfits in this movie .
+                    </figcaption>
+                </figure>
+
+                <!-- Image 4: Favorite Movie -->
+                <figure class="gallery-item">
+                    <button class="gallery-image-button"
+                            type="button"
+                            data-full="images/movie2-large.jpg"
+                            data-alt="My favorite animals are monkeys">
+                        <img src="monkey.jpeg"
+                             alt="Monkeys are my favorite animal
+                             loading="lazy">
+                    </button>
+                    <figcaption>
+                        <strong>Monkey</strong>
+                        Monkey image thats too cute not to share 
+                    </figcaption>
+                </figure>
+
+                <!-- Image 5: Music -->
+                <figure class="gallery-item">
+                    <button class="gallery-image-button"
+                            type="button"
+                            data-full="images/music-large.jpg"
+                            data-alt="A music-themed image representing my love of listening to Laufey while designing">
+                        <img src="laufey.jpeg"
+                             alt="Music-themed image representing my love of listening to Laufey"
+                             loading="lazy">
+                    </button>
+                    <figcaption>
+                        <strong>Music</strong>
+                        Listening to Laufey helps make designing more enjoyable.
+                    </figcaption>
+                </figure>
+
+                <!-- Image 6: Graphic Design -->
+                <figure class="gallery-item">
+                    <button class="gallery-image-button"
+                            type="button"
+                            data-full="images/design1-large.jpg"
+                            data-alt="I want to become a pediatrician in the future">
+                        <img src="doctor.jpeg"
+                             alt="My dream is to become a pediatrician"
+                             loading="lazy">
+                    </button>
+                    <figcaption>
+                        <strong>Pediatrician</strong>
+                       My dream is to become a pediatrician
+                    </figcaption>
+                </figure>
+
+                <!-- Image 7: Illustrator -->
+                <figure class="gallery-item">
+                    <button class="gallery-image-button"
+                            type="button"
+                            data-full="images/design2-large.jpg"
+                            data-alt="A digital design image representing my interest in Adobe Illustrator">
+                        <img src="flower.jpeg"
+                             alt="I wish to travel and experience Switzerland one day"
+                             loading="lazy">
+                    </button>
+                    <figcaption>
+                        <strong>Digital Art</strong>
+                        Switzerland is my dream vacation place
+                    </figcaption>
+                </figure>
+
+                <!-- Image 8: Cute Inspiration -->
+                <figure class="gallery-item">
+                    <button class="gallery-image-button"
+                            type="button"
+                            data-full="images/cute-inspiration-large.jpg"
+                            data-alt="Sleeping beauty">
+                        <img src="beauty.jpeg"
+                             alt="My favorite Disney Movie"
+                             loading="lazy">
+                    </button>
+                    <figcaption>
+                        <strong>Disney</strong>
+                        Been my favorite Disney movie ever since I was a little child
+                    </figcaption>
+                </figure>
+
+            </div>
+        </section>
+
+        <!-- Lightbox / Modal -->
+        <!-- Lightbox interaction is written for this page; no external code was copied. -->
+        <div id="lightbox"
+             class="lightbox"
+             role="dialog"
+             aria-modal="true"
+             aria-label="Enlarged gallery image"
+             aria-hidden="true">
+
+            <div class="lightbox-content">
+                <button id="lightbox-close"
+                        class="lightbox-close"
+                        type="button"
+                        aria-label="Close enlarged image">
+                    &times;
+                </button>
+
+                <img id="lightbox-image" src="" alt="">
+
+                <p id="lightbox-caption"></p>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <p>&copy; 2026 Ashanti Muro. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for the image lightbox -->
+    <script>
+        const lightbox = document.getElementById("lightbox");
+        const lightboxImage = document.getElementById("lightbox-image");
+        const lightboxCaption = document.getElementById("lightbox-caption");
+        const closeButton = document.getElementById("lightbox-close");
+        const galleryButtons = document.querySelectorAll(".gallery-image-button");
+
+        let previousFocus = null;
+
+        galleryButtons.forEach(function (button) {
+            button.addEventListener("click", function () {
+                const thumbnail = button.querySelector("img");
+                const fullImagePath = button.dataset.full;
+
+                previousFocus = button;
+
+                lightboxImage.src = fullImagePath;
+                lightboxImage.alt = button.dataset.alt || thumbnail.alt;
+
+                lightboxCaption.textContent =
+                    button.closest("figure").querySelector("figcaption").innerText;
+
+                lightbox.classList.add("open");
+                lightbox.setAttribute("aria-hidden", "false");
+                document.body.classList.add("lightbox-open");
+
+                closeButton.focus();
+            });
+        });
+
+        function closeLightbox() {
+            lightbox.classList.remove("open");
+            lightbox.setAttribute("aria-hidden", "true");
+            document.body.classList.remove("lightbox-open");
+
+            lightboxImage.src = "";
+            lightboxImage.alt = "";
+            lightboxCaption.textContent = "";
+
+            if (previousFocus) {
+                previousFocus.focus();
+            }
+        }
+
+        closeButton.addEventListener("click", closeLightbox);
+
+        lightbox.addEventListener("click", function (event) {
+            if (event.target === lightbox) {
+                closeLightbox();
+            }
+        });
+
+        document.addEventListener("keydown", function (event) {
+            if (event.key === "Escape" &&
+                lightbox.classList.contains("open")) {
+                closeLightbox();
+            }
+        });
+    </script>
+	
+}
+
+</body>
+</html>
 
