@@ -76,26 +76,271 @@ body {
   border-radius: 8px;
 }
 
-/* Fun Facts */
-#fun-facts {
-  background-color: #ffd6e7;
-  color: #d63384;
-  padding: 15px;
-  margin: 20px 0;
-  border: 2px solid #ff69b4;
-  border-radius: 10px;
-}
-#fun-facts h2 {
-  color: hotpink;
+@charset "UTF-8";
+
+/* General Page Styling */
+body {
+    background-color: #ffe6f0;
+    color: #d63384;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    line-height: 1.6;
 }
 
-/* Images */
-img {
-  margin: 10px;
-  border: 3px solid #ffb6c1;
-  border-radius: 10px;
+/* All Headings */
+h1,
+h2,
+h3 {
+    color: hotpink;
 }
 
+/* Banner */
+#header {
+    background-image: url("cakeee.jpg");
+    background-color: #ffc1d9;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 30px 20px;
+    border-bottom: 4px solid hotpink;
+}
+
+#header h1 {
+    font-size: 42px;
+    margin: 0;
+    color: hotpink;
+}
+
+.tagline {
+    color: #d63384;
+    font-size: 18px;
+    margin: 5px 0 0;
+}
+
+/* Navigation */
+#nav {
+    background-color: #fff0f6;
+    text-align: center;
+    padding: 16px;
+    border-bottom: 2px solid #ff69b4;
+}
+
+#nav a {
+    display: inline-block;
+    color: #d63384;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 5px 15px;
+    padding: 6px 10px;
+    border-radius: 8px;
+}
+
+#nav a:hover,
+#nav a:focus {
+    background-color: #ffd6e7;
+    color: #c21868;
+    text-decoration: underline;
+}
+
+/* Main Content Box */
+#content {
+    background-color: #fff7fa;
+    width: 85%;
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 25px;
+    border: 2px solid #ffb6c1;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+/* Introduction and Hero Image */
+#intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 15px;
+    margin-bottom: 35px;
+}
+
+.intro-text {
+    flex: 1;
+    min-width: 0;
+}
+
+.intro-text h2 {
+    font-size: 28px;
+}
+
+.intro-text p {
+    font-size: 17px;
+}
+
+/* Large Hero Image */
+.hero-image {
+    flex: 0 1 345px;
+    width: 100%;
+    max-width: 345px;
+    text-align: center;
+}
+
+.hero-image iframe {
+    display: block;
+    width: 100%;
+    height: 445px;
+    border: 3px solid #ffb6c1;
+    border-radius: 12px;
+    box-sizing: border-box;
+}
+
+.image-caption {
+    font-size: 13px;
+    font-style: italic;
+    margin-top: 8px;
+}
+
+/* Three Page Previews */
+#page-previews {
+    text-align: center;
+    margin: 35px 0;
+}
+
+#page-previews > h2 {
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+/* Places the Three Preview Boxes Next to Each Other */
+.preview-container {
+    display: flex;
+    align-items: stretch;
+    gap: 20px;
+}
+
+/* Individual Preview Box */
+.preview-card {
+    background-color: #ffeef5;
+    flex: 1;
+    min-width: 0;
+    padding: 18px;
+    border: 2px solid #ffb6c1;
+    border-radius: 12px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.preview-card h3 {
+    font-size: 22px;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+.preview-card p {
+    flex-grow: 1;
+}
+
+/* Pinterest Preview Images */
+.preview-image {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.preview-image iframe {
+    display: block;
+    width: 100%;
+    height: 250px;
+    border: 0;
+}
+
+/* Pink Buttons */
+.pink-button {
+    display: inline-block;
+    background-color: hotpink;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 16px;
+    margin: 12px 0;
+    border: 2px solid hotpink;
+    border-radius: 20px;
+}
+
+.pink-button:hover,
+.pink-button:focus {
+    background-color: #d63384;
+    border-color: #d63384;
+    color: white;
+}
+
+/* Larger Favorites Feature Box */
+#favorites-feature {
+    background-color: #ffd6e7;
+    color: #a91d63;
+    text-align: center;
+    padding: 25px;
+    margin: 35px 0 10px;
+    border: 2px solid #ff69b4;
+    border-radius: 12px;
+}
+
+#favorites-feature h2 {
+    font-size: 28px;
+}
+
+#favorites-feature p {
+    font-size: 17px;
+}
+
+/* Footer */
+#footer {
+    background-color: #ffc1d9;
+    color: #a91d63;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    border-top: 4px solid hotpink;
+    font-weight: bold;
+}
+
+/* Smaller Screens: Stack the Boxes Vertically */
+@media (max-width: 750px) {
+    #content {
+        width: 94%;
+        padding: 15px;
+    }
+
+    #intro {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-image {
+        flex: none;
+        max-width: 345px;
+    }
+
+    .preview-container {
+        flex-direction: column;
+    }
+
+    .preview-card {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    #header h1 {
+        font-size: 32px;
+    }
+
+    #nav a {
+        margin: 4px;
+    }
+}
 /* Footer */
 #footer {
   background-color: #ffc1d9;
