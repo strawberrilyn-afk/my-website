@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Ashanti Muro | About</title>
+    <title>Ashanti Muro | Home</title>
 
-    <!-- Connect to the shared stylesheet -->
+    <!-- Connects this page to the CSS stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -16,14 +15,14 @@
 
     <!-- Banner -->
     <header id="header">
-        <h1>About Me</h1>
+        <h1>Ashanti Muro</h1>
         <p class="tagline">A Little Corner of My World ♡</p>
     </header>
 
     <!-- Navigation -->
     <nav id="nav" aria-label="Main navigation">
-        <a href="index.html">Home</a>
-        <a href="about.html" aria-current="page">About</a>
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="about.html">About</a>
         <a href="favorites.html">Favorites</a>
         <a href="contact.html">Contact</a>
     </nav>
@@ -31,113 +30,141 @@
     <!-- Main Content -->
     <main id="content">
 
-        <!-- Personal Introduction -->
-        <section class="paragraph">
-            <p>
-                My name is Ashanti. I was born in Guadalajara, but I live in
-                Oceanside, CA! I was born on April 16, 2009. I have a younger
-                sister who I consider to be my best friend. One of my hobbies
-                is running, as I'm part of my school's cross country and track team.
-            </p>
-        </section>
-         <section class="paragraph">
-            <p>
-                Im relatively new to web design, so the part I need the most help
-                on is the code but I good at knowing how I want my layout to be like
-                I took a graphic design course, and from what I learned is that I 
-                prefer using Adobe Illustrator over Photoshop. My favorite type of
-                projects are flyers and logo icons. I have used these skills to create
-                flyers for the Young Leaders in Healthcare club at my school!
-            </p>
-        </section>
+        <!-- Introduction and Hero Image -->
+        <section id="intro">
 
-        <!-- Favorite Movies -->
-        <section class="paragraph">
-            <p>
-                I really love watching movies and logging them on Letterboxd.
-                My favorite movies are
-                <b>The Tale of the Princess Kaguya</b>,
-                <u>Uptown Girls</u>, and
-                <i>Drop Dead Gorgeous</i>.
-            </p>
-        </section>
+            <div class="intro-text">
+                <h2>Welcome to My Website!</h2>
 
-        <!-- Movies Watched in Theaters -->
-        <section class="paragraph">
-            <p>
-                Some movies I recently went to watch in theaters were
-                <i>La La Land</i> and <i>Toy Story 5</i>.
-            </p>
+                <p>
+                    My name is Ashanti Muro, and I'm a student who has taken
+                    graphic design and is currently taking web design at my
+                    high school. I get most of my inspiration from movies,
+                    and I love focusing on making my designs more cute even
+                    if it's not what everyone wants. I hope this website can
+                    give you a better idea of who I am as a whole!
+                </p>
+            </div>
+
+            <!-- Hero Image -->
+            <div class="hero-image">
+                <iframe
+                    src="https://assets.pinterest.com/ext/embed.html?id=275141858472622341"
+                    title="Snoopy riding a unicorn, representing my playful and cute style"
+                    loading="lazy">
+                </iframe>
+
+                <p class="image-caption">
+                    A little bit of cute inspiration!
+                </p>
+            </div>
+
         </section>
 
-        <!-- Three Images and Captions -->
-        <section id="about-gallery">
-            <h2>Some of My Favorite Things ♡</h2>
+        <!-- Three Page Previews -->
+        <section id="page-previews">
 
-            <div class="about-figure-container">
+            <h2>Explore My Website ♡</h2>
 
-                <!-- Princess Kaguya Image -->
-                <figure class="about-figure">
-                    <img
-                        src="princess.jpeg"
-                        alt="Artwork or poster for The Tale of the Princess Kaguya">
+            <div class="preview-container">
 
-                    <figcaption>
-                        BEST movie of all time, watching this was revolutionary!
-                    </figcaption>
-                </figure>
+                <!-- About Page Preview -->
+                <article class="preview-card">
+                    <h3>About Me</h3>
 
-                <!-- My Little Pony Image -->
-                <figure class="about-figure">
-                    <img
-                        src="cadence.jpeg"
-                        alt="My Little Pony character">
+                    <div class="preview-image">
+                        <iframe
+                            src="https://assets.pinterest.com/ext/embed.html?id=600175087888203199"
+                            title="Decorative Pinterest image for the About Me page"
+                            loading="lazy">
+                        </iframe>
+                    </div>
 
-                    <figcaption>
-                        My little secret is that I still enjoy watching
-                        My Little Pony.
-                    </figcaption>
-                </figure>
+                    <p>
+                        Click below to learn more about me!
+                    </p>
 
-                <!-- Cupcakes Image -->
-                <figure class="about-figure">
-                    <img
-                        src="cupcake.jpeg"
-                        alt="Cupcake with polka dot wrapping">
+                    <a class="pink-button" href="about.html">
+                        Learn About Me
+                    </a>
+                </article>
 
-                    <figcaption>
-                        I love decorating cupcakes.
-                        
-                    </figcaption><p>
-  Want to try baking cupcakes yourself?
-  <a href="https://www.allrecipes.com/recipe/17377/vanilla-cupcakes/"
-     target="_blank"
-     rel="noopener noreferrer">
-    Click here for a vanilla cupcake recipe! 🧁
-  </a>
-</p>                </figure>
+                <!-- Favorites Page Preview -->
+                <article class="preview-card">
+                    <h3>My Favorites</h3>
+
+                    <div class="preview-image">
+                        <iframe
+                            src="https://assets.pinterest.com/ext/embed.html?id=312578030358060892"
+                            title="Decorative Pinterest image for the Favorites page"
+                            loading="lazy">
+                        </iframe>
+                    </div>
+
+                    <p>
+                        Click below to learn more about my hobbies and interests!
+                    </p>
+
+                    <a class="pink-button" href="favorites.html">
+                        Explore My Favorites
+                    </a>
+                </article>
+
+                <!-- Contact Page Preview -->
+                <article class="preview-card">
+                    <h3>Contact Me</h3>
+
+                    <div class="preview-image">
+                        <iframe
+                            src="https://assets.pinterest.com/ext/embed.html?id=614600680433007333"
+                            title="Decorative Pinterest image for the Contact page"
+                            loading="lazy">
+                        </iframe>
+                    </div>
+
+                    <p>
+                        Click below if you have any questions!
+                    </p>
+
+                    <a class="pink-button" href="contact.html">
+                        Contact Me
+                    </a>
+                </article>
 
             </div>
         </section>
 
-        <!-- Fun Facts -->
-        <section id="fun-facts">
-            <h2>Fun Facts</h2>
+        <!-- Larger Favorites Feature -->
+        <section id="favorites-feature">
 
-            <ul>
-                <li>Show: My Little Pony</li>
-                <li>Food: Poke Bowl</li>
-                <li>Game: Roblox</li>
-                <li>Dessert: Cupcakes</li>
-                <li>Artist: Laufey</li>
-            </ul>
+            <h2>A Few of My Favorite Things ♡</h2>
+
+            <p>
+                My favorite movie of all time is The Tale of the Princess
+                Kaguya, but I'm always open to any type of movie
+                recommendations. I love listening to music while I design,
+                especially my favorite artist, Laufey. I will never complain
+                if you give me a bowl of poke or cupcakes as a little snack
+                while I'm designing.
+            </p>
+
+            <a class="pink-button" href="favorites.html">
+                See All My Favorites
+            </a>
+
         </section>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/mEnt0IAXUBA?si=6Bql89K2HejDNz-A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
     </main>
 
     <!-- Footer -->
     <footer id="footer">
+        <p>
+            &copy; 2026 Ashanti Muro. All rights reserved.
+        </p>
+    </footer>
+
+</body>
+</html>
         <p>&copy; 2026 Ashanti Muro. All rights reserved.</p>
     </footer>
 
